@@ -421,10 +421,23 @@ h6, .h6 {
   font-weight: 300;
 }
 
-.display-1 {
+/* .display-1 {
   font-size: 6rem;
   font-weight: 300;
   line-height: 1.2;
+}
+.container-fluid {
+  display: flex;
+  justify-content: center;
+} */
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 800px; /* Adjust width as needed */
+  text-align: center;
 }
 
 @media (max-width: 1200px) {
@@ -9863,4 +9876,16 @@ a.text-dark:hover, a.text-dark:focus {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.card {
+  height: 100%; /* Ensure all cards have the same height */
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img-top {
+  height: 250px; /* Set a fixed height for images */
+  width: 100%; /* Ensure it covers the width */
+  object-fit: cover; /* Prevents distortion and fills the space */
 }
